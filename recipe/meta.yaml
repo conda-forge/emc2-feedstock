@@ -1,5 +1,5 @@
 {% set name = "emc2" %}
-{% set version = "0.3.1" %}
+{% set version = "1.0.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emc2-{{ version }}.tar.gz
-  sha256: 21284cbf5d3d03fdcf84d9df2f26a01bb7b1ff7161088f922a8a329ba4c0985f
+  sha256: 8b6ef759751ac59371f5fa6687c487238e75d48b83b7cd9244bdadeba69fc8fc
 
 build:
   number: 0
@@ -18,9 +18,9 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - python >=3.6
   run:
-    - python
+    - python >=3.6
     - xarray
     - matplotlib-base
     - dask
