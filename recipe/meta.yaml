@@ -33,6 +33,7 @@ test:
     - emc2
     - emc2.core
   commands:
+    - pip install icartt
     - pip check
   requires:
     - pip
