@@ -1,5 +1,5 @@
 {% set name = "emc2" %}
-{% set version = "1.2.1" %}
+{% set version = "1.2.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emc2-{{ version }}.tar.gz
-  sha256: 52e228ac82c9aacc93b5d376ee865ca5207eb9e731960e9fa793373c49fa5a99
+  sha256: cbbfb63b177b82d68b3596081c790cce278687a6c6cc35685c410c9894528ac2
 
 build:
   number: 0
@@ -18,19 +18,22 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.6
+    - python >=3.8
   run:
-    - python >=3.6
+    - python >=3.8
     - xarray
     - matplotlib-base
     - dask
     - pint
     - act-atmos
+    - arm_pyart
+    - cython
 test:
   imports:
     - emc2
     - emc2.core
   commands:
+    - pip install icartt
     - pip check
   requires:
     - pip
