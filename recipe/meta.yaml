@@ -26,6 +26,8 @@ requirements:
     - dask
     - pint
     - act-atmos
+    - arm_pyart
+    - cython
 test:
   imports:
     - emc2
