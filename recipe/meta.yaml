@@ -26,6 +26,8 @@ requirements:
     - dask
     - pint
     - act-atmos
+    - arm_pyart
+    - numpy
 test:
   imports:
     - emc2
