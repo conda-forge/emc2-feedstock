@@ -18,15 +18,14 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.7
+    - python >=3.8
   run:
-    - python >=3.7
+    - python >=3.8
     - xarray
     - matplotlib-base
     - dask
     - pint
     - act-atmos
-    - icartt
 test:
   imports:
     - emc2
