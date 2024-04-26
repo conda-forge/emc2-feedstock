@@ -11,16 +11,16 @@ source:
   sha256: d2e9a5e5efd2cc4609e73a00f5a57601c0d05b4be1e2de3801c250c18aa6b832
 
 build:
-  number: 1
+  number: 2
   noarch: python
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
   run:
-    - python >=3.8
+    - python >=3.9
     - xarray
     - matplotlib-base
     - dask
