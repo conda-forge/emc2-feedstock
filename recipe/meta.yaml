@@ -1,5 +1,5 @@
 {% set name = "emc2" %}
-{% set version = "1.3.0" %}
+{% set version = "1.3.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/emc2-{{ version }}.tar.gz
-  sha256: 88163497bf0f09ace6d892d3249c10ac87c414fb3b71622d41eca5b3f3a8fe30
+  sha256: d2e9a5e5efd2cc4609e73a00f5a57601c0d05b4be1e2de3801c250c18aa6b832
 
 build:
   number: 0
