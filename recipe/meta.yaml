@@ -18,15 +18,16 @@ build:
 requirements:
   host:
     - pip
-    - python >=3.8
+    - python >=3.9
+    - python <3.12
   run:
-    - python >=3.8
+    - python >=3.9
+    - python <3.12
     - xarray
     - matplotlib-base
     - dask
     - pint
     - act-atmos
-    - arm_pyart
     - cython
 test:
   imports:
