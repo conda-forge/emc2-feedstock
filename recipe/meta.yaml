@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/emc2-{{ version }}.tar.gz
-  sha256: d2e9a5e5efd2cc4609e73a00f5a57601c0d05b4be1e2de3801c250c18aa6b832
+  sha256: 9b6e1ef8747e3d4665bb493b70bf0887eb13a148bbd19550d1f47619e9230ee6
 
 build:
   number: 1
