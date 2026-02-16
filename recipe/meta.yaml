@@ -18,17 +18,18 @@ build:
 requirements:
   host:
     - pip
-    - python {{ python_min }}
-    - python {{ python_min }}
+    - python >={{ python_min }}
   run:
     - python >={{ python_min }}
-    - python >={{ python_min }},<3.12
     - xarray
     - matplotlib-base
     - dask
     - pint
     - act-atmos
+    - openpyxl
     - cython
+    - numpy
+    - nc-time-axis
 test:
   imports:
     - emc2
@@ -38,7 +39,6 @@ test:
     - pip check
   requires:
     - pip
-    - python {{ python_min }}
 
 about:
   home: https://github.com/columncolab/EMC2
