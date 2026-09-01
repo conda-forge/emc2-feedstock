@@ -30,6 +30,9 @@ requirements:
     - numpy
     - nc-time-axis
     - cython
+    - tqdm
+    - netCDF4
+    - scipy
 test:
   imports:
     - emc2
